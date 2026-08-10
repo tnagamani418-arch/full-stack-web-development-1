@@ -1,0 +1,9 @@
+axios.post("http://localhost:5000/api/auth/register", data);
+
+axios.post("http://localhost:5000/api/auth/login", data);
+
+axios.post("http://localhost:5000/api/blog/create", blogData, {
+  headers: {
+    Authorization: `Bearer ${token}`
+  }
+});
